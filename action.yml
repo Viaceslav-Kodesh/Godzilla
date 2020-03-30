@@ -1,19 +1,5 @@
-name: Godzilla
-#test
-on: [push]
-  #schedule:
-    #- cron:  '0 * * * *'
-jobs:
-  runMultipleCommands:
-    runs-on: ubuntu-latest
-      using: 'docker'
-      image: 'alpine:3.10'
-        args:
-          - ${{ inputs.who-to-greet }}
-          OS_AUTH_URL: ${{secrets.OS_AUTH_URL}}
-          OS_PASSWORD: ${{secrets.OS_PASSWORD}}
-          OS_TENANT_NAME: ${{secrets.OS_TENANT_NAME}}
-          OS_USERNAME: ${{secrets.OS_USERNAME}}
-          OS_USER_DOMAIN_NAME: ${{secrets.OS_USER_DOMAIN_NAME}}
-          run: |
-            python action.py
+name: 'Godzilla'
+description: 'Perform chaous testing'
+author: 'Viaceslav-Kodesh'
+using: 'docker'
+image: 'alpine:3.10'
