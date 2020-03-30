@@ -1,3 +1,3 @@
 #!/bin/sh
-ls -la /Objects
+ls -la /objects
 python /action.py
