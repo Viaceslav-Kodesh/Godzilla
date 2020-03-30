@@ -11,5 +11,5 @@ WORKDIR /usr/src/app
 COPY Objects/* /
 COPY action.py /
 COPY entrypoint.sh /
-RUN chmod +x entrypoint.sh
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
