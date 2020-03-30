@@ -8,7 +8,7 @@ jobs:
     - name: OpenStack Chaos Action
       uses: Viaceslav-Kodesh/Chaos@0.1
       env:
-          DELAY: ${{10}} #minutes
+          DELAY: ${{10}}  #minutes
           PERCENT: ${{100}}
           OS_USERNAME: ${{secrets.OS_USERNAME}}
           OS_AUTH_URL: ${{secrets.OS_AUTH_URL}}
