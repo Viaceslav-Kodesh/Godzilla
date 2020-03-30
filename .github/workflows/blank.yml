@@ -5,6 +5,8 @@ jobs:
     name: Implement Chaos
     runs-on: ubuntu-latest
     steps:
+    - name: checkout
+      uses: actions/checkout@v1
     - name: OpenStack Chaos Action
       uses: Viaceslav-Kodesh/Godzilla@master
       env:
