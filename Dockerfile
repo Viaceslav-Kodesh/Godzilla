@@ -1,7 +1,6 @@
 FROM ubuntu:latest
-
-RUN apt-get install git -y
 RUN apt-get update -y && apt-get install python3-pip -y && pip3 install pip --upgrade && apt-get clean
+RUN apt-get install git -y
 RUN pip install --upgrade setuptools
 RUN pip install python-novaclient
 RUN pip install credentials
