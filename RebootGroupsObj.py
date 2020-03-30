@@ -2,24 +2,18 @@ import random
 import time
 
 
-# это класс который ребутает определённый процент мемберсов в определённой группе
 class RebootGroupsObj:
-    # поля класса
     __groups = None
     __close_time = None
     __percent = None
     __nova_client_list = None
 
-    # определяю конструктор с параметрами который инициализирует класс
     def __init__(self, nova_client, groups, close_time, percent):
         self.__groups = groups
         self.__close_time = close_time
         self.__percent = percent
         self.__nova_client_list = nova_client.servers.list()
 
-    # 'self' это не явный указатель на вызываемый текущий объект
-
-    # этот метод подсчитывает процент по мемберам определённой группы, и запускает ребут по мемберам данной группы
     def reboot_percent_machines(self):
         for group in self.__groups:
             count_machines = len(group.members)
@@ -29,7 +23,6 @@ class RebootGroupsObj:
             if self.check_total_time():
                 break
 
-    # в данном методе мы находим из списка нова клиент мемберов которые состоят в группе
     def get_machines_items(self, group):
         items = []
         for machine in group.members:
@@ -55,7 +48,6 @@ class RebootGroupsObj:
                 print('Server {0} is in state {1}'.format(machines[value].name, machines[value].status))
                 while True:
                     if machines[value].status == 'ACTIVE':
-                        # time.sleep(3)
                         break
                     if self.check_total_time():
                         break
