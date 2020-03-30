@@ -1,5 +1,5 @@
-from Objects.RebootMachinesObj import RebootMachinesObj
-from Objects.RebootGroupsObj import RebootGroupsObj
+import RebootMachinesObj
+import RebootGroupsObj
 from novaclient.client import Client
 from Objects.DataObj import DataObj
 import urllib.parse
