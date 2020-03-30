@@ -14,5 +14,6 @@ COPY Objects/RebootMachinesObj.py /objects/RebootMachinesObj.py
 COPY Objects/__init__.py /objects/__init__.py
 COPY action.py /
 COPY entrypoint.sh /
+RUN chmod 775 -R /
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
