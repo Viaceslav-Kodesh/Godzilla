@@ -64,4 +64,4 @@ class RebootGroupsObj:
                 break
 
     def check_total_time(self):
-        return time.time() > self.__close_time;
+        return time.time() > self.__close_time
