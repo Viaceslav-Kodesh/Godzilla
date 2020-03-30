@@ -50,7 +50,7 @@ data = {"auth": {
 }
 headers = {'Content-type': "application/json", 'Accept': 'text/plain'}
 r = requests.post(url, data=json.dumps(data), headers=headers)
-token = r.headers['X-Subject-Token']
+token = r.headers['x-subject-token']
 url = "https://" + domain + ":8774/v2.1/os-server-groups"
 print("https://" + domain + ":8774/v2.1/os-server-groups")
 print(token)
