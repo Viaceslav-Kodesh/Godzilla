@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: OpenStack Chaos Action
-      uses: Viaceslav-Kodesh/Chaos@0.1
+      uses: Viaceslav-Kodesh/Godzilla@master
       env:
           DELAY: ${{10}}  #minutes
           PERCENT: ${{100}}
