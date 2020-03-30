@@ -1,5 +1,7 @@
-name: 'Godzilla'
-description: 'Perform chaous testing'
-author: 'Viaceslav-Kodesh'
-using: 'docker'
-image: 'alpine:3.10'
+  
+  name: 'Godzilla'
+  description: 'Godzilla perform chaos'
+  author: 'Viaceslav Kodesh'
+  runs:
+    using: 'docker'
+    image: 'Dockerfile'
