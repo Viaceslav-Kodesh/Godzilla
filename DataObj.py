@@ -5,4 +5,3 @@ class DataObj:
         self.name = data['name']
         self.members = data['members']
         self.policies = data['policies']
-# описывает один элемент группы из массива групп, полученных из массива групп реквеста
