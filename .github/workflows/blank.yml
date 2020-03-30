@@ -1,0 +1,19 @@
+name: Godzilla
+on: [push]
+jobs:
+  container-job:
+    name: Implement Chaos
+    runs-on: ubuntu-latest
+    steps:
+    - name: OpenStack Chaos Action
+      uses: Viaceslav-Kodesh/Chaos@0.1
+      env:
+          DELAY: ${{10}} #minutes
+          PERCENT: ${{100}}
+          OS_USERNAME: ${{secrets.OS_USERNAME}}
+          OS_AUTH_URL: ${{secrets.OS_AUTH_URL}}
+          OS_PASSWORD: ${{secrets.OS_PASSWORD}}
+          OS_TENANT_NAME: ${{secrets.OS_TENANT_NAME}}
+          OS_PROJECT_CRED: ${{secrets.OS_PROJECT_CRED}}
+          OS_NOVA_VERSION: ${{secrets.OS_NOVA_VERSION}}
+          OS_USER_DOMAIN_NAME: ${{secrets.OS_USER_DOMAIN_NAME}}
