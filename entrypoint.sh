@@ -1,3 +1,3 @@
 #!/bin/sh
-ls -la
+ls -la /github/workspace/Godzilla
 python /action.py
