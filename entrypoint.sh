@@ -1,3 +1,3 @@
 #!/bin/sh
 ls -la /objects
-python /action.py
+python3 /action.py
