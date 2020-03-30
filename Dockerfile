@@ -1,12 +1,12 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install git -y
-RUN apt install python3 -y
-RUN apt-get install python3-pip -y && pip3 install pip --upgrade
-RUN pip3 install --upgrade setuptools
-RUN pip3 install python-novaclient
-RUN pip3 install credentials
-RUN pip3 install python-openstacksdk
+RUN apt-get install python3 -y
+RUN apt-get install git -y
+RUN apt-get update -y && apt-get install python3-pip -y && pip3 install pip --upgrade && apt-get clean
+RUN pip install --upgrade setuptools
+RUN pip install python-novaclient
+RUN pip install credentials
+RUN pip install python-openstacksdk
 RUN apt update
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
