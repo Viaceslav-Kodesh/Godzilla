@@ -1,7 +1,8 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install python-pip -y && apt-get install git -y
+RUN apt-get update && apt-get install git -y
 RUN apt install python3 -y
+RUN apt-get install python3-pip -y && pip3 install pip --upgrade
 RUN pip3 install --upgrade setuptools
 RUN pip3 install python-novaclient
 RUN pip3 install credentials
