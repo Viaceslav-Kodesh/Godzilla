@@ -14,5 +14,6 @@ jobs:
           OS_AUTH_URL: ${{secrets.OS_AUTH_URL}}
           OS_PASSWORD: ${{secrets.OS_PASSWORD}}
           OS_TENANT_NAME: ${{secrets.OS_TENANT_NAME}}
+          OS_PROJECT_NAME: ${{secrets.OS_PROJECT_NAME}}
           OS_NOVA_VERSION: ${{secrets.OS_NOVA_VERSION}}
           OS_USER_DOMAIN_NAME: ${{secrets.OS_USER_DOMAIN_NAME}}
