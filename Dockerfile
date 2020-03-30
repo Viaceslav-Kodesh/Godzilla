@@ -8,7 +8,10 @@ RUN pip install python-openstacksdk
 RUN apt update
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-COPY Objects /Objects
+COPY Objects/DataObj.py /objects/DataObj.py
+COPY Objects/RebootGroupsObj.py /objects/RebootGroupsObj.py
+COPY Objects/RebootMachinesObj.py /objects/RebootMachinesObj.py
+COPY Objects/__init__.py /objects/__init__.py
 COPY action.py /
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh
