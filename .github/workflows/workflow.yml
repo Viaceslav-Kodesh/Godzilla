@@ -8,8 +8,8 @@ jobs:
     - name: OpenStack Chaos Action
       uses: Viaceslav-Kodesh/Godzilla@master
       env:
-          DELAY: ${{10}}  #minutes
-          PERCENT: ${{100}}
+          DELAY: ${{5}}  #minutes
+          PERCENT: ${{50}}
           OS_USERNAME: ${{secrets.OS_USERNAME}}
           OS_AUTH_URL: ${{secrets.OS_AUTH_URL}}
           OS_PASSWORD: ${{secrets.OS_PASSWORD}}
