@@ -52,8 +52,6 @@ headers = {'Content-type': "application/json", 'Accept': 'text/plain'}
 r = requests.post(url, data=json.dumps(data), headers=headers)
 token = r.headers['x-subject-token']
 url = "https://" + domain + ":8774/v2.1/os-server-groups"
-print("https://" + domain + ":8774/v2.1/os-server-groups")
-print(token)
 headers = {'X-Auth-Token': token}
 r = requests.get(url, headers=headers)
 
