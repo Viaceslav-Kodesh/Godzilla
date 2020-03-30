@@ -7,8 +7,8 @@ RUN pip install credentials
 RUN pip install python-openstacksdk
 RUN apt update
 RUN mkdir -p /usr/src/app
-ADD Objects /Objects
 WORKDIR /usr/src/app
+COPY Objects /objects
 COPY action.py /
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh
