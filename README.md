@@ -42,7 +42,7 @@ Looks like this:
 <img src="img/p004.PNG" width="80%" height="80%">
 
 If you input all OpenStack project credentials, you can start this **Actions!**
-<img src="img/p005.PNG" width="80%" height="80%">
+<img src="img/p005.PNG" width="100%" height="100%">
 
 **As a result you can see in logs **
 ```ssh
