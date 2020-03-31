@@ -37,7 +37,7 @@ jobs:
 
 Push **Start commit** button!
 You should create **github secrets credentials** 
-<img src="img/p003.PNG" width="80%" height="80%">
+<img src="img/p003.PNG" width="100%" height="100%">
 Looks like this:
 <img src="img/p004.PNG" width="80%" height="80%">
 
