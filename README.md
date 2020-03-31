@@ -7,10 +7,10 @@ Godzilla finds all the virtual machines in your OpenStack project and sorts them
 
 ## How to use Godzilla:
 Create new repository on **github.com**
-![](img/p001.PNG) 
+<img src="img/p001.PNG" width="65%" height="65%"> 
 
 Choose **Actions** tab and create **Simple workflow**
-![](img/p002.PNG)
+<img src="img/p002.PNG" width="65%" height="65%">
 
 Remove all text and paste this workflow:
 ```yaml
@@ -37,12 +37,12 @@ jobs:
 
 Push **Start commit** button!
 You should create **github secrets credentials** 
-![](img/p003.PNG)
+<img src="img/p003.PNG" width="65%" height="65%">
 Looks like this:
-![](img/p004.PNG)
+<img src="img/p004.PNG" width="65%" height="65%">
 
 If you input all OpenStack project credentials, you can start this **Actions!**
-![](img/p005.PNG)
+<img src="img/p005.PNG" width="65%" height="65%">
 
 **As a result you can see in logs **
 ```ssh
