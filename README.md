@@ -1,19 +1,18 @@
 
 # Godzilla
-This action perform chaos in your OpenStack project. It's realy depends waht percent you define.
+This service can make it clear the level of resilience of your objects in OpenStack.
 
 ## How it works:
-Godzilla finds all the virtual machines in your OpenStack project and sorts them into two types “in server group or not” and use reboot type ‘HARD’ and wait for status ‘ACTIVE’.
+Godzilla finds all the virtual machines in your OpenStack project and sorts them into two types “in server group or not” and use reboot type ‘HARD’ and wait for status ‘ACTIVE’ you can control the count of virtual machines and chaos time.
 
 ## How to use Godzilla:
-Create new repository on **github.com**
-<img src="img/p001.PNG" width="100%" height="100%"> 
-
+Should create new repository on **github.com**
+<img src="img/p001.PNG" width="90%" height="90%">
 Choose **Actions** tab and create **Simple workflow**
-<img src="img/p002.PNG" width="100%" height="100%">
+<img src="img/p002.PNG" width="90%" height="90%">
 
 Remove all text and paste this workflow:
-```yaml
+```
 name: Godzilla
 on: [push]
 jobs:
@@ -34,18 +33,29 @@ jobs:
           OS_NOVA_VERSION: ${{secrets.OS_NOVA_VERSION}}
           OS_USER_DOMAIN_NAME: ${{secrets.OS_USER_DOMAIN_NAME}}
 ```
-
 Push **Start commit** button!
-You should create **github secrets credentials** 
-<img src="img/p003.PNG" width="100%" height="100%">
+
+You should create **github secrets credentials**
+<img src="img/p003.PNG" width="90%" height="90%">
+
 Looks like this:
-<img src="img/p004.PNG" width="100%" height="100%">
+<img src="img/p004.PNG" width="90%" height="90%">
 
 If you input all OpenStack project credentials, you can start this **Actions!**
-<img src="img/p005.PNG" width="100%" height="100%">
+<img src="img/p005.PNG" width="90%" height="90%">
 
-**As a result you can see in logs **
-```ssh
+Variable | Description |
+--- | --- |
+OS_USERNAME | login from project |
+OS_AUTH_URL | openstack authentication url |
+OS_PASSWORD | your password |
+OS_TENANT_NAME | project id |
+OS_PROJECT_NAME | project name |
+OS_NOVA_VERSION | nova api version, now 2.0 |
+OS_USER_DOMAIN_NAME | OpenStack domain |
+
+As a result you can see in logs
+```
 Reboot machines in server groups
 Server no_group-2 is in state ACTIVE
 Server no_group-3 is in state ACTIVE
