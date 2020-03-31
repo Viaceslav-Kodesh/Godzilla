@@ -77,7 +77,7 @@ if os.environ['PERCENT'] == '':
 else:
     percent = int(os.environ['PERCENT'])
 
-print('\nReboot machines without groups')
+print('\nReboot machines in server groups')
 rebootMachinesObj = RebootMachinesObj(sList, computerListObjects, close_time, percent)
 rebootMachinesObj.reboot_percent_machines()
 print('-' * 40)
