@@ -7,7 +7,7 @@ Godzilla finds all the virtual machines in your OpenStack project and sorts them
 
 ## How to use Godzilla:
 Create new repository on **github.com**
-<img src="img/p001.PNG" width="65%" height="65%"> 
+<img src="img/p001.PNG" width="70%" height="70%"> 
 
 Choose **Actions** tab and create **Simple workflow**
 <img src="img/p002.PNG" width="65%" height="65%">
