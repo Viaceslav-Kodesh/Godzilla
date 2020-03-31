@@ -1,4 +1,4 @@
-<img src="img/Logo.PNG" width="100%" height="100%">
+<img src="img/Logo.PNG" width="80%" height="80%">
 # Godzilla
 This service can make it clear the level of resilience of your objects in OpenStack.
 
