@@ -9,11 +9,13 @@ Godzilla finds all the virtual machines in your OpenStack project and sorts them
 
 ## How to use Godzilla:
 Should create new repository on **github.com**
+
 <img src="img/p001.PNG" width="95%" height="95%">
 Choose **Actions** tab and create **Simple workflow**
 <img src="img/p002.PNG" width="95%" height="95%">
 
 Remove all text and paste this workflow:
+
 ```
 name: Godzilla
 on: [push]
@@ -38,12 +40,14 @@ jobs:
 Push **Start commit** button!
 
 You should create **github secrets credentials**
+
 <img src="img/p003.PNG" width="95%" height="95%">
 
 Looks like this:
 <img src="img/p004.PNG" width="95%" height="95%">
 
 If you input all OpenStack project credentials, you can start this **Actions!**
+
 <img src="img/p005.PNG" width="95%" height="95%">
 
 Variable | Description |
@@ -56,7 +60,7 @@ OS_PROJECT_NAME | project name |
 OS_NOVA_VERSION | nova api version, now 2.0 |
 OS_USER_DOMAIN_NAME | OpenStack domain |
 
-As a result you can see in logs
+**As a result you can see in logs**
 ```
 Reboot machines in server groups
 Server no_group-2 is in state ACTIVE
