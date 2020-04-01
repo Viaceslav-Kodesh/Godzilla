@@ -50,7 +50,17 @@ data = {"auth": {
 }
 headers = {'Content-type': "application/json", 'Accept': 'text/plain'}
 r = requests.post(url, data=json.dumps(data), headers=headers)
-token = r.headers['x-subject-token']
+token = None
+# r.headers['X-Subject-Token']
+headers = r.headers
+
+if headers.get('X-Subject-Token') is not None:
+    token = headers.get('X-Subject-Token')
+elif headers.get('x-subject-token') is not None:
+    token = headers.get('x-subject-token')
+else:
+    print('Headers is not valid!')
+    exit(-1)
 url = "https://" + domain + ":8774/v2.1/os-server-groups"
 headers = {'X-Auth-Token': token}
 r = requests.get(url, headers=headers)
