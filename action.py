@@ -51,7 +51,6 @@ data = {"auth": {
 headers = {'Content-type': "application/json", 'Accept': 'text/plain'}
 r = requests.post(url, data=json.dumps(data), headers=headers)
 token = None
-# r.headers['X-Subject-Token']
 headers = r.headers
 
 if headers.get('X-Subject-Token') is not None:
